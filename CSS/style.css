@@ -1,0 +1,154 @@
+/*Jash Vaidya
+  Assignment 1
+ */
+
+
+/*By defaulting some values for easier manipulation*/
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Custom Font found online, created by user Jekkoder on Reddit*/
+@font-face { font-family: "Overwatch"; 
+src: url("http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff'); 
+}
+
+
+/*Displaying the landing page for the Home and About Me pages*/
+
+/*Each page has a landing area. .land is made to use as a general template for all pages*/
+.land {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*These classes are for changing the background of each page */
+.about {
+	background-image: url("../Assets/backdrop.jpg");
+}
+
+/*Sizing the video background correctly */
+#video {
+	width: auto%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+}
+
+/*Formatting the unordered list for better viewing*/
+ul,li {
+	margin: 0;
+	list-style-type: none;
+}
+
+/*positioning the nav bar*/
+.menu {
+	margin: 0;
+	position: relative;
+	top: 25%;
+	z-index: 1;
+}
+
+/*Making the biography box and how it's displayed*/
+.box {
+	height: 650px;
+	width: 650px;
+	position: relative;
+	margin: auto;
+    margin-top: 3%;
+	color: white;
+	background-color: #405275;
+	opacity: 0.5;
+	left: 300px;
+	bottom: 380px;
+	font: 10px Arial,sans-serif;
+	font-size: 1em;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.story {
+	height: 400px;
+	width: 600px;
+	position: relative;
+	margin: auto;
+	top: 35px;
+	color: white;
+	font: 10px Arial,sans-serif;
+	font-size: 1em;
+	line-height: 23px;
+}
+
+.head {
+	position: relative;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	padding: 10px 10px;
+	font-family: Overwatch;
+	color: #218ffe;
+	font-size: 2.6rem;
+}
+
+.fa {
+	color: #218ffe;
+	font-size: 20px;
+	padding-right: 5px;
+	padding-left: 2px;
+}
+.head li{
+	padding-top: 10px;
+}
+
+/*styling the images on aboutme.html*/
+
+.images img {
+	margin: 9%;
+    width: 250px;  /*Set a small width */
+    height: 250px;
+    float: left;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #343436;
+    filter:brightness(1.1);
+}
+
+.images img:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*Customizing the font*/
+.links {
+	font-family: Overwatch;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+	text-decoration: none;
+	color: #FAA02E;
+	font-size: 75px;
+	text-align: center;
+	position: relative;
+}
+
+.links:hover {
+	color: #FCBD49;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
