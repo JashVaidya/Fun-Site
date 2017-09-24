@@ -1,24 +1,38 @@
 <!-- Jash Vaidya
-     Assignment 1 -->
+Assignment 1 -->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Let's have fun</title>
-        <link rel="stylesheet" type="text/css"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="../CSS/style.css">
-        </head>
-        <body>
-            <div class="land hobbies">
-                <div class="menu">
-                    <ul>
-                        <li><a href="home.html" class="links">Home</a></li>
-                        <li><a href="about.html" class="links">about me</a></li>
-                        <li><a href="hobbies.html" class="links">hobbies</a></li>
-                        <li><a href="schoolwork.html" class="links">schoolwork</a></li>
-                        <li><a href="fun.html" class="links">let's have some fun</a></li>
-                    </ul>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="land fun">
+            <div class="enter">
+                <h1>ENTER THE KONAMI CODE</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html" class="links">Home</a></li>
+                    <li><a href="about.html" class="links">about me</a></li>
+                    <li><a href="hobbies.html" class="links">hobbies</a></li>
+                    <li><a href="schoolwork.html" class="links">schoolwork</a></li>
+                    <li><a href="fun.html" class="links">let's have some fun</a></li>
+                </ul>
+            </div>
+
+            <!-- Make sure sound is on for best effect -->
+            <div id="monster">
+                <div class="video-background">
+                    <div class="video-foreground">
+                        <video id="video" preload="auto" loop="loop">
+                            <source src="../Assets/sax.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+        <script src="../JS/secret.js"></script>
+    </body>
+</html>
